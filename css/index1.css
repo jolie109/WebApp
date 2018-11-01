@@ -1,0 +1,179 @@
+    .all{
+        height: 100%;
+        display: flex;
+        flex-direction: column}
+    .nav-bar{
+        width: 100%;
+        height: 72px;
+        background: #fff;  }
+    /*.nav-barFixed{width: 100%;*/
+    /*height: 72px;*/
+    /*background: #fff;*/
+    /*position: fixed;*/
+    /*margin-bottom: 72px;*/
+
+
+
+    /*}*/
+    .nav-bar div,.nav-bar .logo-box a{
+        display: inline-block}
+    .nav-bar .logo-box{
+        position: relative;
+        height: 72px;
+        display: inline-block;
+    }
+    .nav-bar .logo-box img{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 172px;
+        height: 72px;
+        padding-left:14px;
+        display: inline-block;
+    }
+    .nav-bar .logo-box .im2{display: block}
+    .nav-bar .logo-box .im1{display: none}
+    .nav-bar .logo-box i:nth-child(1){
+        position: absolute;
+        top: 0;
+        left:202px;
+        height:72px ;
+        line-height: 72px;
+        text-align:center;
+        display: none;}
+    .nav-bar .logo-box i:nth-child(2){
+        position: absolute;
+        top: 0;
+        left:96px;
+        height:72px ;
+        line-height: 72px;
+        text-align:center;
+        }
+
+
+
+    .nav-bar #header-sxc{
+
+        height: 72px; background: #fff;
+        padding-right:2%;
+    }
+    .nav-bar #header-sxc ul li{line-height: 72px}
+
+    .nav-bar #header-sxc ul li i{
+        font-size: 24px;
+        color: #aea9c3;}
+    /*section{width: 100%;*/
+    /*height: 100%;*/
+    /*display: flex;*/
+    /*background: #ff0;*/
+    /*}*/
+    section{
+        flex: 1;overflow: auto;}
+    /*width: 100%;*/
+    /*display: flex;}*/
+    .side-box{
+        width:110px;
+        height: 100%;
+        color: #fff;
+        margin-right: 28px;
+        padding-top:34px;
+        background: #2c304d;
+        display: none}
+
+    side-box ul li{
+        font-size: 14px;}
+
+    .side-box ul li h3{line-height: 28px;
+        position: relative;}
+    .side-box ul li  i:nth-child(1){margin:2px 14px;
+        font-size: 14px;
+        color: #fff;}
+    .side-box ul li:nth-child(1) i:nth-child(2){margin:2px 14px;
+        font-size: 14px;
+        color: #e75966;}
+    .side-box ul li i:nth-child(3){
+        position: absolute;
+        top: 0;
+        right:5%;
+        font-size: 14px;}
+    .side-box ul li{
+        height: 100%;}
+    .side-box ul li h3 span{display: none}
+    .sub{display: none}
+    .sub li:nth-child(1){padding-left:0}
+    /*.sub li:nth-child(1) i:nth-child(3){margin-left:27%}*/
+    .sub li{line-height:38px;
+        font-size: 10px;}
+    .sub{width:90%;background: #252946;
+        margin:0 auto;
+        font-size: 14px;color: #90a9bb}
+    .sub li:nth-child(1){color:#fff;font-size: 12px}
+    .sub li:nth-child(2){color:#e75966;}
+    .content{ flex: 1;overflow: auto; height:900px;
+        background: #ff0;
+        margin-right:5%;
+   }
+    .con-t{width: 100%;
+        line-height: 102px;}
+    .con-t .l{
+        font-size: 20px;}
+    .con-t .r{
+        width: 112px;
+        height: 38px;
+        background: #e64b66;
+        border-radius: 16px;
+        margin:26px 0;
+        line-height: 38px;
+        text-align: center;
+        color: #fff;font-size: 12px}
+    .con-chart{
+        width: 100%;
+        height: 546px;
+        background: #ff0;
+        margin-bottom:24px}
+    .con-chart-ul{
+        width: 20%;
+        margin:0;
+        padding: 0;}
+    .con-chart-ul li{
+        margin:0;
+        padding: 0;
+        height: 258px;
+        background: #f0f;
+    }
+    .con-chart-ul li:nth-child(1){
+        margin-bottom: 28px;
+        box-shadow:5px 3px #f3f3f5;
+    }
+    .con-chart-r{width: 66%;
+        height:548px;
+        background: #0f0;
+        box-shadow:2px 3px 2px 3px #f3f3f5;}
+    .con-news{width: 100%;
+        height: 552px;}
+    .con-news-ul li{width: 30%;
+        height: 552px;
+        background: #fcc;
+        margin-right:5%;
+        box-shadow: 2px 2px 2px 0px #f1f1f3}
+
+    .con-news-ul li:nth-child(3){margin-right:0}
+    .li-up{width: 100%;
+        height: 60px;
+        line-height: 60px;
+        border-bottom: 1px solid #eeeeee;
+        margin-bottom: 18px}
+    .li-up p{margin-left: 10%}
+    .li-up i{font-size: 18px;
+        margin-right:10%}
+    .li-content{width: 80%;
+        background: #ccc;
+        margin:0 auto;
+        height: 286px;
+        box-shadow: 3px 1px 3px 1px #f6f5f9}
+    .li-content img{width:40px;
+        height: 40px;
+        margin: 15px}
+    .li-content span.r{margin-right: 12px}
+    .li-content span p{
+        line-height: 20px}
