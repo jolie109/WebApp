@@ -339,284 +339,341 @@
             </ul>
         </div>
         <!--右边的内容-->
+
         <div class="content r">
+            <!--右边顶部-->
             <div class="con-t">
                 <p class="l">Dashboard</p>
                 <p class="r">Add Widget</p>
             </div>
+            <!-- 右边第一部分 con-chart-->
             <div class="con-chart">
                 <div class="con-chart-ul l">
                     <p><a href="#"><img src="img/ul1.gif"/></a></p>
                     <p><a href="#"><img src="img/l2.gif"/></a></p>
                 </div>
-                <div class="con-chart-r l" style="display: inline-block">
+                <div class="con-chart-r r">
                     <div class="deliverd-t">
-                        <h4>Delivered Orders</h4>
-                        <span></span>
+                        <h4 class="l">Delivered Orders</h4>
+                        <span class="r view">View all</span>
                     </div>
                     <div class="deliverd-cot">
-                        <div class="deliverd-cot-l"></div>
+                        <div class="deliverd-cot-l l">
+                            <div id="container"></div>
+                        </div>
+                        <div class="deliverd-cot-r r">
+                            <img src="img/r1.gif"/>
+                        </div>
                     </div>
-
-
                 </div>
             </div>
-            <!--<div class="con-news">-->
-                <!--<ul class="con-news-ul">-->
-                    <!--<li class="con-news-ul-li l">-->
-                        <!--<a href="#">-->
-                            <!--<div class="li-up">-->
-                                <!--<p class="l">Post</p>-->
-                                <!--<i class="iconfont icon-shixincaidan r"></i>-->
-                            <!--</div>-->
-                            <!--<div class="li-content">-->
-                                <!--<div class="li-content-top" style="width: 100%;height:72px;">-->
-                                    <!--<img src="img/con1.gif" class="l"/>-->
-                                    <!--<span class="r">-->
-                                    <!--<p style="color: #88304d;margin-top: 14px"><span style="color:#e76c90;">Lisa Garett</span> posted an image</p>-->
-                                    <!--<p style="color: #98a8b4;">42 min ago</p>-->
-                                    <!--</span>-->
-                                <!--</div>-->
-                                <!--<div class="li-content-middle" style="width:90%" >-->
-                                    <!--<img src="img/c2.gif" style="width:100%;height:auto"/>-->
-                                <!--</div>-->
+            <!-- 右边第二部分 con-news-->
+            <div class="con-news">
+                <ul class="con-news-ul">
+                    <li class="con-news-ul-li l">
+                        <a href="#">
+                            <div class="li-up">
+                                <p class="l">Post</p>
+                                <i class="iconfont icon-shixincaidan r"></i>
+                            </div>
+                            <div class="li-content">
+                                <div class="li-content-top" style="width: 100%;height:72px;">
+                                    <img src="img/con1.gif" class="l"/>
+                                    <span class="r">
+                                    <p style="color: #88304d;margin-top: 14px"><span style="color:#e76c90;">Lisa Garett</span> posted an image</p>
+                                    <p style="color: #98a8b4;">42 min ago</p>
+                                    </span>
+                                </div>
+                                <div class="li-content-middle" style="width:90%" >
+                                    <img src="img/c2.gif" style="width:100%;height:auto"/>
+                                </div>
 
 
-                            <!--</div>-->
-                            <!--<div class="li-down">-->
+                            </div>
+                            <div class="li-down">
 
-                            <!--</div>-->
-                        <!--</a>-->
-                    <!--</li>-->
-                    <!--<li class="con-news-ul-li l"><a href="#"></a></li>-->
-                    <!--<li class="con-news-ul-li l"><a href="#"></a></li>-->
-                <!--</ul>-->
-            <!--</div>-->
-            <!--&lt;!&ndash;Product Overview&ndash;&gt;-->
-            <!--<div class="cont-product">-->
-                <!--&lt;!&ndash;Product Overview-header&ndash;&gt;-->
-                <!--<div class="cont-product-header">-->
-                    <!--<h4 class="l">Product Overview</h4>-->
-                    <!--<div class="r">-->
-                        <!--<span style="margin:0 14px;">Week</span>-->
-                        <!--<span>Month</span>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="cont-product-body">-->
-                    <!--<div class="table-responsive table-scroll padding-right-10" style="max-height: 520px; overflow: hidden; outline: none;" tabindex="5">-->
-                        <!--<table class="table table-hover mb-0">-->
-                            <!--<thead>-->
-                            <!--<tr>-->
-                                <!--<th style="width:5%">-->
-                                    <!--<div class="styled-checkbox mt-2">-->
-                                        <!--<input type="checkbox" name="check-all" id="check-all">-->
-                                        <!--<label for="check-all"></label>-->
-                                    <!--</div>-->
-                                <!--</th>-->
-                                <!--<th>Order ID</th>-->
-                                <!--<th>Customer Name</th>-->
-                                <!--<th>Country</th>-->
-                                <!--<th>Ship Date</th>-->
-                                <!--<th><span style="width:100px;">Status</span></th>-->
-                                <!--<th>Order Total</th>-->
-                                <!--<th>Actions</th>-->
-                            <!--</tr>-->
-                            <!--</thead>-->
-                            <!--<tbody>-->
-                            <!--<tr>-->
-                                <!--<td style="width:5%;">-->
-                                    <!--<div class="styled-checkbox mt-2">-->
-                                        <!--<input type="checkbox" name="cb1" id="cb1">-->
-                                        <!--<label for="cb1"></label>-->
-                                    <!--</div>-->
-                                <!--</td>-->
-                                <!--<td><span class="text-primary">054-01-FR</span></td>-->
-                                <!--<td>Lori Baker</td>-->
-                                <!--<td>US</td>-->
-                                <!--<td>10/21/2017</td>-->
-                                <!--<td><span style="width:100px;"><span class="badge-text badge-text-small info">Paid</span></span></td>-->
-                                <!--<td>$139.45</td>-->
-                                <!--<td class="td-actions">-->
-                                    <!--<a href="#"><i class="la la-edit edit"></i></a>-->
-                                    <!--<a href="#"><i class="la la-close delete"></i></a>-->
-                                <!--</td>-->
-                            <!--</tr>-->
-                            <!--<tr>-->
-                                <!--<td style="width:5%;">-->
-                                    <!--<div class="styled-checkbox mt-2">-->
-                                        <!--<input type="checkbox" name="cb2" id="cb2">-->
-                                        <!--<label for="cb2"></label>-->
-                                    <!--</div>-->
-                                <!--</td>-->
-                                <!--<td><span class="text-primary">021-12-US</span></td>-->
-                                <!--<td>Lawrence Crawford</td>-->
-                                <!--<td>FR</td>-->
-                                <!--<td>10/21/2017</td>-->
-                                <!--<td><span style="width:100px;"><span class="badge-text badge-text-small info">Paid</span></span></td>-->
-                                <!--<td>$189.00</td>-->
-                                <!--<td class="td-actions">-->
-                                    <!--<a href="#"><i class="la la-edit edit"></i></a>-->
-                                    <!--<a href="#"><i class="la la-close delete"></i></a>-->
-                                <!--</td>-->
-                            <!--</tr>-->
-                            <!--<tr>-->
-                                <!--<td style="width:5%;">-->
-                                    <!--<div class="styled-checkbox mt-2">-->
-                                        <!--<input type="checkbox" name="cb3" id="cb3">-->
-                                        <!--<label for="cb3"></label>-->
-                                    <!--</div>-->
-                                <!--</td>-->
-                                <!--<td><span class="text-primary">189-01-RU</span></td>-->
-                                <!--<td>Samuel Walker</td>-->
-                                <!--<td>AU</td>-->
-                                <!--<td>08/21/2017</td>-->
-                                <!--<td><span style="width:100px;"><span class="badge-text badge-text-small danger">Failed</span></span></td>-->
-                                <!--<td>$107.55</td>-->
-                                <!--<td class="td-actions">-->
-                                    <!--<a href="#"><i class="la la-edit edit"></i></a>-->
-                                    <!--<a href="#"><i class="la la-close delete"></i></a>-->
-                                <!--</td>-->
-                            <!--</tr>-->
-                            <!--<tr>-->
-                                <!--<td style="width:5%;">-->
-                                    <!--<div class="styled-checkbox mt-2">-->
-                                        <!--<input type="checkbox" name="cb4" id="cb4">-->
-                                        <!--<label for="cb4"></label>-->
-                                    <!--</div>-->
-                                <!--</td>-->
-                                <!--<td><span class="text-primary">092-06-FR</span></td>-->
-                                <!--<td>Angela Walters</td>-->
-                                <!--<td>US</td>-->
-                                <!--<td>08/21/2017</td>-->
-                                <!--<td><span style="width:100px;"><span class="badge-text badge-text-small success">Delivered</span></span></td>-->
-                                <!--<td>$129.85</td>-->
-                                <!--<td class="td-actions">-->
-                                    <!--<a href="#"><i class="la la-edit edit"></i></a>-->
-                                    <!--<a href="#"><i class="la la-close delete"></i></a>-->
-                                <!--</td>-->
-                            <!--</tr>-->
-                            <!--<tr>-->
-                                <!--<td style="width:5%;">-->
-                                    <!--<div class="styled-checkbox mt-2">-->
-                                        <!--<input type="checkbox" name="cb5" id="cb5">-->
-                                        <!--<label for="cb5"></label>-->
-                                    <!--</div>-->
-                                <!--</td>-->
-                                <!--<td><span class="text-primary">021-09-US</span></td>-->
-                                <!--<td>Ryan Hanson</td>-->
-                                <!--<td>ES</td>-->
-                                <!--<td>07/21/2017</td>-->
-                                <!--<td><span style="width:100px;"><span class="badge-text badge-text-small info">Paid</span></span></td>-->
-                                <!--<td>$199.95</td>-->
-                                <!--<td class="td-actions">-->
-                                    <!--<a href="#"><i class="la la-edit edit"></i></a>-->
-                                    <!--<a href="#"><i class="la la-close delete"></i></a>-->
-                                <!--</td>-->
-                            <!--</tr>-->
-                            <!--<tr>-->
-                                <!--<td style="width:5%;">-->
-                                    <!--<div class="styled-checkbox mt-2">-->
-                                        <!--<input type="checkbox" name="cb6" id="cb6">-->
-                                        <!--<label for="cb6"></label>-->
-                                    <!--</div>-->
-                                <!--</td>-->
-                                <!--<td><span class="text-primary">054-01-FR</span></td>-->
-                                <!--<td>Evelyn Black</td>-->
-                                <!--<td>FR</td>-->
-                                <!--<td>10/21/2017</td>-->
-                                <!--<td><span style="width:100px;"><span class="badge-text badge-text-small info">Paid</span></span></td>-->
-                                <!--<td>$139.45</td>-->
-                                <!--<td class="td-actions">-->
-                                    <!--<a href="#"><i class="la la-edit edit"></i></a>-->
-                                    <!--<a href="#"><i class="la la-close delete"></i></a>-->
-                                <!--</td>-->
-                            <!--</tr>-->
-                            <!--<tr>-->
-                                <!--<td style="width:5%;">-->
-                                    <!--<div class="styled-checkbox mt-2">-->
-                                        <!--<input type="checkbox" name="cb7" id="cb7">-->
-                                        <!--<label for="cb7"></label>-->
-                                    <!--</div>-->
-                                <!--</td>-->
-                                <!--<td><span class="text-primary">021-12-US</span></td>-->
-                                <!--<td>James Morris</td>-->
-                                <!--<td>EN</td>-->
-                                <!--<td>10/21/2017</td>-->
-                                <!--<td><span style="width:100px;"><span class="badge-text badge-text-small info">Paid</span></span></td>-->
-                                <!--<td>$189.00</td>-->
-                                <!--<td class="td-actions">-->
-                                    <!--<a href="#"><i class="la la-edit edit"></i></a>-->
-                                    <!--<a href="#"><i class="la la-close delete"></i></a>-->
-                                <!--</td>-->
-                            <!--</tr>-->
-                            <!--<tr>-->
-                                <!--<td style="width:5%;">-->
-                                    <!--<div class="styled-checkbox mt-2">-->
-                                        <!--<input type="checkbox" name="cb8" id="cb8">-->
-                                        <!--<label for="cb8"></label>-->
-                                    <!--</div>-->
-                                <!--</td>-->
-                                <!--<td><span class="text-primary">189-01-RU</span></td>-->
-                                <!--<td>Valentin H.</td>-->
-                                <!--<td>AU</td>-->
-                                <!--<td>08/21/2017</td>-->
-                                <!--<td><span style="width:100px;"><span class="badge-text badge-text-small danger">Failed</span></span></td>-->
-                                <!--<td>$107.55</td>-->
-                                <!--<td class="td-actions">-->
-                                    <!--<a href="#"><i class="la la-edit edit"></i></a>-->
-                                    <!--<a href="#"><i class="la la-close delete"></i></a>-->
-                                <!--</td>-->
-                            <!--</tr>-->
-                            <!--<tr>-->
-                                <!--<td style="width:5%;">-->
-                                    <!--<div class="styled-checkbox mt-2">-->
-                                        <!--<input type="checkbox" name="cb9" id="cb9">-->
-                                        <!--<label for="cb9"></label>-->
-                                    <!--</div>-->
-                                <!--</td>-->
-                                <!--<td><span class="text-primary">092-06-FR</span></td>-->
-                                <!--<td>Beverly Matthews</td>-->
-                                <!--<td>RU</td>-->
-                                <!--<td>08/21/2017</td>-->
-                                <!--<td><span style="width:100px;"><span class="badge-text badge-text-small info">Paid</span></span></td>-->
-                                <!--<td>$129.85</td>-->
-                                <!--<td class="td-actions">-->
-                                    <!--<a href="#"><i class="la la-edit edit"></i></a>-->
-                                    <!--<a href="#"><i class="la la-close delete"></i></a>-->
-                                <!--</td>-->
-                            <!--</tr>-->
-                            <!--<tr>-->
-                                <!--<td style="width:5%;">-->
-                                    <!--<div class="styled-checkbox mt-2">-->
-                                        <!--<input type="checkbox" name="cb10" id="cb10">-->
-                                        <!--<label for="cb10"></label>-->
-                                    <!--</div>-->
-                                <!--</td>-->
-                                <!--<td><span class="text-primary">021-09-US</span></td>-->
-                                <!--<td>Jeffrey Arnold</td>-->
-                                <!--<td>US</td>-->
-                                <!--<td>07/21/2017</td>-->
-                                <!--<td><span style="width:100px;"><span class="badge-text badge-text-small info">Paid</span></span></td>-->
-                                <!--<td>$199.95</td>-->
-                                <!--<td class="td-actions">-->
-                                    <!--<a href="#"><i class="la la-edit edit"></i></a>-->
-                                    <!--<a href="#"><i class="la la-close delete"></i></a>-->
-                                <!--</td>-->
-                            <!--</tr>-->
-                            <!--</tbody>-->
-                        <!--</table>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="cont-product-footer"></div>-->
+                            </div>
+                        </a>
+                    </li>
+                    <li class="con-news-ul-li l">
+                        <a href="#">
+                            <div class="li-up">
+                                <p class="l">Post</p>
+                                <i class="iconfont icon-shixincaidan r"></i>
+                            </div>
+                            <div class="li-content">
+                                <div class="li-content-top" style="width: 100%;height:72px;">
+                                    <img src="img/con1.gif" class="l"/>
+                                    <span class="r">
+                                    <p style="color: #88304d;margin-top: 14px"><span style="color:#e76c90;">Lisa Garett</span> posted an image</p>
+                                    <p style="color: #98a8b4;">42 min ago</p>
+                                    </span>
+                                </div>
+                                <div class="li-content-middle" style="width:90%" >
+                                    <img src="img/c2.gif" style="width:100%;height:auto"/>
+                                </div>
 
-            <!--</div>-->
-            <!--<div class="cont-taskList">-->
-                <!--<ul class="cont-taskList-ul">-->
-                    <!--<li style="box-shadow: 2px 2px 2px 0px #f1f1f3;">-->
-                        <!--<a href="#">-->
-                            <!--<div class="li-up">-->
-                                <!--<p class="l">Post</p>-->
-                                <!--<i class="iconfont icon-shixincaidan r"></i>-->
+
+                            </div>
+                            <div class="li-down">
+
+                            </div>
+                        </a>
+                    </li>
+                    <li class="con-news-ul-li l">
+                        <a href="#">
+                            <div class="li-up">
+                                <p class="l">Post</p>
+                                <i class="iconfont icon-shixincaidan r"></i>
+                            </div>
+                            <div class="li-content">
+                                <div class="li-content-top" style="width: 100%;height:72px;">
+                                    <img src="img/con1.gif" class="l"/>
+                                    <span class="r">
+                                    <p style="color: #88304d;margin-top: 14px"><span style="color:#e76c90;">Lisa Garett</span> posted an image</p>
+                                    <p style="color: #98a8b4;">42 min ago</p>
+                                    </span>
+                                </div>
+                                <div class="li-content-middle" style="width:90%" >
+                                    <img src="img/c2.gif" style="width:100%;height:auto"/>
+                                </div>
+
+
+                            </div>
+                            <div class="li-down">
+
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 右边第三部分 cont-product-->
+            <!--Product Overview-->
+            <div class="cont-product">
+                <!--Product Overview-header-->
+                <div class="cont-product-header">
+                    <h4 class="l">Product Overview</h4>
+                    <div class="r">
+                        <span style="margin:0 14px;">Week</span>
+                        <span>Month</span>
+                    </div>
+                </div>
+                <div class="cont-product-body">
+                    <div class="table-responsive table-scroll padding-right-10" style="max-height: 520px; overflow: hidden; outline: none;" tabindex="5">
+                        <table class="table table-hover mb-0">
+                            <thead>
+                            <tr>
+                                <th style="width:5%">
+                                    <div class="styled-checkbox mt-2">
+                                        <input type="checkbox" name="check-all" id="check-all">
+                                        <label for="check-all"></label>
+                                    </div>
+                                </th>
+                                <th>Order ID</th>
+                                <th>Customer Name</th>
+                                <th>Country</th>
+                                <th>Ship Date</th>
+                                <th><span style="width:100px;">Status</span></th>
+                                <th>Order Total</th>
+                                <th>Actions</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td style="width:5%;">
+                                    <div class="styled-checkbox mt-2">
+                                        <input type="checkbox" name="cb1" id="cb1">
+                                        <label for="cb1"></label>
+                                    </div>
+                                </td>
+                                <td><span class="text-primary">054-01-FR</span></td>
+                                <td>Lori Baker</td>
+                                <td>US</td>
+                                <td>10/21/2017</td>
+                                <td><span style="width:100px;"><span class="badge-text badge-text-small info">Paid</span></span></td>
+                                <td>$139.45</td>
+                                <td class="td-actions">
+                                    <a href="#"><i class="la la-edit edit"></i></a>
+                                    <a href="#"><i class="la la-close delete"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:5%;">
+                                    <div class="styled-checkbox mt-2">
+                                        <input type="checkbox" name="cb2" id="cb2">
+                                        <label for="cb2"></label>
+                                    </div>
+                                </td>
+                                <td><span class="text-primary">021-12-US</span></td>
+                                <td>Lawrence Crawford</td>
+                                <td>FR</td>
+                                <td>10/21/2017</td>
+                                <td><span style="width:100px;"><span class="badge-text badge-text-small info">Paid</span></span></td>
+                                <td>$189.00</td>
+                                <td class="td-actions">
+                                    <a href="#"><i class="la la-edit edit"></i></a>
+                                    <a href="#"><i class="la la-close delete"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:5%;">
+                                    <div class="styled-checkbox mt-2">
+                                        <input type="checkbox" name="cb3" id="cb3">
+                                        <label for="cb3"></label>
+                                    </div>
+                                </td>
+                                <td><span class="text-primary">189-01-RU</span></td>
+                                <td>Samuel Walker</td>
+                                <td>AU</td>
+                                <td>08/21/2017</td>
+                                <td><span style="width:100px;"><span class="badge-text badge-text-small danger">Failed</span></span></td>
+                                <td>$107.55</td>
+                                <td class="td-actions">
+                                    <a href="#"><i class="la la-edit edit"></i></a>
+                                    <a href="#"><i class="la la-close delete"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:5%;">
+                                    <div class="styled-checkbox mt-2">
+                                        <input type="checkbox" name="cb4" id="cb4">
+                                        <label for="cb4"></label>
+                                    </div>
+                                </td>
+                                <td><span class="text-primary">092-06-FR</span></td>
+                                <td>Angela Walters</td>
+                                <td>US</td>
+                                <td>08/21/2017</td>
+                                <td><span style="width:100px;"><span class="badge-text badge-text-small success">Delivered</span></span></td>
+                                <td>$129.85</td>
+                                <td class="td-actions">
+                                    <a href="#"><i class="la la-edit edit"></i></a>
+                                    <a href="#"><i class="la la-close delete"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:5%;">
+                                    <div class="styled-checkbox mt-2">
+                                        <input type="checkbox" name="cb5" id="cb5">
+                                        <label for="cb5"></label>
+                                    </div>
+                                </td>
+                                <td><span class="text-primary">021-09-US</span></td>
+                                <td>Ryan Hanson</td>
+                                <td>ES</td>
+                                <td>07/21/2017</td>
+                                <td><span style="width:100px;"><span class="badge-text badge-text-small info">Paid</span></span></td>
+                                <td>$199.95</td>
+                                <td class="td-actions">
+                                    <a href="#"><i class="la la-edit edit"></i></a>
+                                    <a href="#"><i class="la la-close delete"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:5%;">
+                                    <div class="styled-checkbox mt-2">
+                                        <input type="checkbox" name="cb6" id="cb6">
+                                        <label for="cb6"></label>
+                                    </div>
+                                </td>
+                                <td><span class="text-primary">054-01-FR</span></td>
+                                <td>Evelyn Black</td>
+                                <td>FR</td>
+                                <td>10/21/2017</td>
+                                <td><span style="width:100px;"><span class="badge-text badge-text-small info">Paid</span></span></td>
+                                <td>$139.45</td>
+                                <td class="td-actions">
+                                    <a href="#"><i class="la la-edit edit"></i></a>
+                                    <a href="#"><i class="la la-close delete"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:5%;">
+                                    <div class="styled-checkbox mt-2">
+                                        <input type="checkbox" name="cb7" id="cb7">
+                                        <label for="cb7"></label>
+                                    </div>
+                                </td>
+                                <td><span class="text-primary">021-12-US</span></td>
+                                <td>James Morris</td>
+                                <td>EN</td>
+                                <td>10/21/2017</td>
+                                <td><span style="width:100px;"><span class="badge-text badge-text-small info">Paid</span></span></td>
+                                <td>$189.00</td>
+                                <td class="td-actions">
+                                    <a href="#"><i class="la la-edit edit"></i></a>
+                                    <a href="#"><i class="la la-close delete"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:5%;">
+                                    <div class="styled-checkbox mt-2">
+                                        <input type="checkbox" name="cb8" id="cb8">
+                                        <label for="cb8"></label>
+                                    </div>
+                                </td>
+                                <td><span class="text-primary">189-01-RU</span></td>
+                                <td>Valentin H.</td>
+                                <td>AU</td>
+                                <td>08/21/2017</td>
+                                <td><span style="width:100px;"><span class="badge-text badge-text-small danger">Failed</span></span></td>
+                                <td>$107.55</td>
+                                <td class="td-actions">
+                                    <a href="#"><i class="la la-edit edit"></i></a>
+                                    <a href="#"><i class="la la-close delete"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:5%;">
+                                    <div class="styled-checkbox mt-2">
+                                        <input type="checkbox" name="cb9" id="cb9">
+                                        <label for="cb9"></label>
+                                    </div>
+                                </td>
+                                <td><span class="text-primary">092-06-FR</span></td>
+                                <td>Beverly Matthews</td>
+                                <td>RU</td>
+                                <td>08/21/2017</td>
+                                <td><span style="width:100px;"><span class="badge-text badge-text-small info">Paid</span></span></td>
+                                <td>$129.85</td>
+                                <td class="td-actions">
+                                    <a href="#"><i class="la la-edit edit"></i></a>
+                                    <a href="#"><i class="la la-close delete"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:5%;">
+                                    <div class="styled-checkbox mt-2">
+                                        <input type="checkbox" name="cb10" id="cb10">
+                                        <label for="cb10"></label>
+                                    </div>
+                                </td>
+                                <td><span class="text-primary">021-09-US</span></td>
+                                <td>Jeffrey Arnold</td>
+                                <td>US</td>
+                                <td>07/21/2017</td>
+                                <td><span style="width:100px;"><span class="badge-text badge-text-small info">Paid</span></span></td>
+                                <td>$199.95</td>
+                                <td class="td-actions">
+                                    <a href="#"><i class="la la-edit edit"></i></a>
+                                    <a href="#"><i class="la la-close delete"></i></a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="cont-product-footer"></div>
+
+            </div>
+            <!-- 右边第四部分 cont-taskList-->
+            <div class="cont-taskList">
+                <ul class="cont-taskList-ul">
+                    <li>
+                        <a href="#">
+                            <div class="li-up" style="background: #fff;">
+                                <p class="l">Post</p>
+                                <i class="iconfont icon-shixincaidan r"></i>
                                 <!--<div class="i-up-r">-->
                                     <!--<ul>-->
                                         <!--<li>-->
@@ -628,21 +685,84 @@
                                     <!--</ul>-->
 
                                 <!--</div>-->
-                            <!--</div>-->
-                            <!--<div class="li-content" style="max-width:92%;-->
-                            <!--margin-top:20px;background: #fff;box-shadow: none">-->
-                                <!--<div style="width:176px;">-->
-                                    <!--<h3 style="font-size: 18px">TODAY</h3>-->
-                                    <!--<p style="color: #a4b0b4;"><span style="color:#e76c90;font-size:27px">12</span>new  task</p>-->
+                            </div>
+                            <div class="li-content" style="max-width:92%;
+                            margin-top:20px;background: #fff;box-shadow: none">
+                                <div style="width:176px;">
+                                    <h3 style="font-size: 18px">TODAY</h3>
+                                    <p style="color: #a4b0b4;"><span style="color:#e76c90;font-size:27px">12</span>new  task</p>
+                                </div>
+
+
+                            </div>
+                            <div class="li-down">
+
+                            </div>
+                        </a>
+                    </li>
+                    <li style="box-shadow: 2px 2px 2px 0px #f1f1f3;">
+                        <a href="#">
+                            <div class="li-up">
+                                <p class="l">Post</p>
+                                <i class="iconfont icon-shixincaidan r"></i>
+                                <!--<div class="i-up-r">-->
+                                <!--<ul>-->
+                                <!--<li>-->
+                                <!--<i class="iconfont icon-shixincaidan"style="display: inline-block"></i>-->
+                                <!--<span style="display: inline-block">Add Task</span>-->
+                                <!--</li>-->
+                                <!--<li><i class="iconfont icon-shixincaidan r"></i></li>-->
+                                <!--<li><i class="iconfont icon-shixincaidan r"></i></li>-->
+                                <!--</ul>-->
+
                                 <!--</div>-->
+                            </div>
+                            <div class="li-content" style="max-width:92%;
+                            margin-top:20px;background: #fff;box-shadow: none">
+                                <div style="width:176px;">
+                                    <h3 style="font-size: 18px">TODAY</h3>
+                                    <p style="color: #a4b0b4;"><span style="color:#e76c90;font-size:27px">12</span>new  task</p>
+                                </div>
 
 
-                            <!--</div>-->
-                            <!--<div class="li-down">-->
+                            </div>
+                            <div class="li-down">
 
-                            <!--</div>-->
-                        <!--</a>-->
-                    <!--</li>-->
+                            </div>
+                        </a>
+                    </li>
+                    <li class="last" style="box-shadow: 2px 2px 2px 0px #f1f1f3;">
+                        <a href="#">
+                            <div class="li-up">
+                                <p class="l">Post</p>
+                                <i class="iconfont icon-shixincaidan r"></i>
+                                <!--<div class="i-up-r">-->
+                                <!--<ul>-->
+                                <!--<li>-->
+                                <!--<i class="iconfont icon-shixincaidan"style="display: inline-block"></i>-->
+                                <!--<span style="display: inline-block">Add Task</span>-->
+                                <!--</li>-->
+                                <!--<li><i class="iconfont icon-shixincaidan r"></i></li>-->
+                                <!--<li><i class="iconfont icon-shixincaidan r"></i></li>-->
+                                <!--</ul>-->
+
+                                <!--</div>-->
+                            </div>
+                            <div class="li-content" style="max-width:92%;
+                            margin-top:20px;background: #fff;box-shadow: none">
+                                <div style="width:176px;">
+                                    <h3 style="font-size: 18px">TODAY</h3>
+                                    <p style="color: #a4b0b4;"><span style="color:#e76c90;font-size:27px">12</span>new  task</p>
+                                </div>
+
+
+                            </div>
+                            <div class="li-down">
+
+                            </div>
+                        </a>
+                    </li>
+
                     <!--<li style="box-shadow: 2px 2px 2px 0px #f1f1f3;">-->
                         <!--<a href="#">-->
                             <!--&lt;!&ndash;cont-taskList-ul li up&ndash;&gt;-->
@@ -663,29 +783,29 @@
                                                     <!--elit, sed do eiusmod tempor incididunt ut labore et-->
                                                     <!--mauris sapien sem, ornare id mauris vitae, ultricies-->
                                                     <!--volutpat ...</p>-->
-                                               <!--<p style="#94a4b0;font-size: 14px">-->
+                                               <!--<p style="color:#94a4b0;font-size: 14px">-->
                                                    <!--<span style="color:#60c400">Open-->
                                                    <!--</span>(1 hour ago)-->
                                                <!--</p>-->
                                            <!--</dd>-->
                                        <!--</dl>-->
                                    <!--</li>-->
-                                   <!--<li style="width: 100%;border-bottom: 1px solid #eeeeee">-->
-                                       <!--<dl style="padding:20px 0">-->
-                                           <!--<dt class="l" style="20%"><img src="img/con1.gif"/></dt>-->
-                                           <!--<dd class="r" style="width: 68%">-->
-                                               <!--<h5 style="color:#f2c304d;font-size: 14px;">Brandon Smith</h5>-->
-                                               <!--<p style="color: #94a4b0;">Hello, Lorem ipsum dolor sit amet, consectetur adipiscing-->
-                                                   <!--elit, sed do eiusmod tempor incididunt ut labore et-->
-                                                   <!--mauris sapien sem, ornare id mauris vitae, ultricies-->
-                                                   <!--volutpat ...</p>-->
-                                               <!--<p style="#94a4b0;font-size: 14px">-->
-                                                   <!--<span style="color:#60c400">Open-->
-                                                   <!--</span>(1 hour ago)-->
-                                               <!--</p>-->
-                                           <!--</dd>-->
-                                       <!--</dl>-->
-                                   <!--</li>-->
+                                   <!--&lt;!&ndash;<li style="width: 100%;border-bottom: 1px solid #eeeeee">&ndash;&gt;-->
+                                       <!--&lt;!&ndash;<dl style="padding:20px 0">&ndash;&gt;-->
+                                           <!--&lt;!&ndash;<dt class="l" style="20%"><img src="img/con1.gif"/></dt>&ndash;&gt;-->
+                                           <!--&lt;!&ndash;<dd class="r" style="width: 68%">&ndash;&gt;-->
+                                               <!--&lt;!&ndash;<h5 style="color:#f2c304d;font-size: 14px;">Brandon Smith</h5>&ndash;&gt;-->
+                                               <!--&lt;!&ndash;<p style="color: #94a4b0;">Hello, Lorem ipsum dolor sit amet, consectetur adipiscing&ndash;&gt;-->
+                                                   <!--&lt;!&ndash;elit, sed do eiusmod tempor incididunt ut labore et&ndash;&gt;-->
+                                                   <!--&lt;!&ndash;mauris sapien sem, ornare id mauris vitae, ultricies&ndash;&gt;-->
+                                                   <!--&lt;!&ndash;volutpat ...</p>&ndash;&gt;-->
+                                               <!--&lt;!&ndash;<p style="#94a4b0;font-size: 14px">&ndash;&gt;-->
+                                                   <!--&lt;!&ndash;<span style="color:#60c400">Open&ndash;&gt;-->
+                                                   <!--&lt;!&ndash;</span>(1 hour ago)&ndash;&gt;-->
+                                               <!--&lt;!&ndash;</p>&ndash;&gt;-->
+                                           <!--&lt;!&ndash;</dd>&ndash;&gt;-->
+                                       <!--&lt;!&ndash;</dl>&ndash;&gt;-->
+                                   <!--&lt;!&ndash;</li>&ndash;&gt;-->
 
                                <!--</ul>-->
 
@@ -729,6 +849,9 @@
 </body>
 </html>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/exporting.js"></script>
+<script type="text/javascript" src="js/highcharts.js"></script>
+<script type="text/javascript" src="js/highcharts-zh_CN.js"></script>
 <script>
     // doucument.querySelector(".sub-li").each(function() {
     //     this.style.color =
@@ -798,3 +921,55 @@ $(function(){
         <!--}-->
     <!--}-->
 <!--</script>-->
+<script>
+    var chart = Highcharts.chart('container',{
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: '月平均降雨量'
+        },
+        subtitle: {
+            text: '数据来源: WorldClimate.com'
+        },
+        xAxis: {
+            categories: [
+                '一月','二月','三月','四月','五月','六月','七月','八月','九月','十月','十一月','十二月'
+            ],
+            crosshair: true
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: '降雨量 (mm)'
+            }
+        },
+        tooltip: {
+            // head + 每个 point + footer 拼接成完整的 table
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: '东京',
+            data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+        }, {
+            name: '纽约',
+            data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+        }, {
+            name: '伦敦',
+            data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
+        }, {
+            name: '柏林',
+            data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+        }]
+    });
+</script>
