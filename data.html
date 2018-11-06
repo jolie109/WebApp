@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title><link rel="stylesheet" href="css/public.css"/>
+    <style>
+        fieldset{background: #021637;border-color:#021637}
+        legend{color:#038295;height: 18px;line-height:18px;
+            border: 1px solid #038295;background: #24315e;text-align: center}
+    </style>
+
+</head>
+<body>
+    <div class="all" style="width: 100%;height: 100%;
+    margin: 0 auto;background:#021637;position: relative">
+        <div style="height:28px;line-height:28px;color:#fff;width:236px;
+        position: absolute;top:0;left:45%;background: #172860;
+        text-align: center;">
+            <p>大数据可视化分析</p>
+        </div>
+        <!--up-->
+        <div class="sys-up" style="width:98%;height:420px;
+        background: #021637;margin: 0 auto;display: flex;margin-top: 10px">
+            <!--左边-->
+            <div class="sys-up-l" style="width:25%;height: 396px;">
+                <!--散点图城市分析-->
+                <fieldset>
+                    <legend>散点图城市分布分析</legend>
+                    <div class="city-sys" style="width: 100%;height: 174px;
+                    ">
+                        <div id="city-map" class="l"
+                             style="width:100%;height: 172px;
+                             background: #021637"></div>
+                        <!--<div id="city-table" class="r" style="width: 40%;-->
+                        <!--height: 172px;"></div>-->
+                    </div>
+                </fieldset>
+                <!--&lt;!&ndash;雷达图城市分析&ndash;&gt;-->
+                <fieldset>
+                    <legend>雷达图示</legend>
+                <div id="sys-leida"
+                style="width:194px;height:174px;
+                margin-top: 6px;">
+                </div>
+                </fieldset>
+            </div>
+            <!--中间-->
+           <div class="sys-up-m" style="flex: 1;
+            height: 396px;background: #021637">
+               <div id="map">
+                   <img style="margin-top: 30px" src="img/未标题-1.gif"/>
+               </div>
+                </div>
+            <!--&lt;!&ndash;右边&ndash;&gt;-->
+            <div class="sys-up-r" style="width:25%;
+            background: #021637;height: 352px">
+                <fieldset>
+                    <legend>饼状图图示</legend>
+                <div id="sys-bing" style="width:95%;height: 174px;
+                margin-bottom: 10px"></div>
+                </fieldset>
+                <fieldset>
+                    <legend>仪表盘图示</legend>
+                <div id="sys-yibiao" style="width: 100%;height:174px"></div>
+                </fieldset>
+            </div>
+        </div>
+
+
+        <!--&lt;!&ndash;down&ndash;&gt;-->
+        <div class="sys-down" style="width: 98%;
+        margin: 0 auto;display: flex;justify-content: space-around;
+        height: 274px;line-height: 274px;margin-top: 10px;padding-top: 20px">
+            <fieldset style="width: 22%;height: 240px">
+                <legend style="color: #008194">面积趋势图图示</legend>
+            <div id="mianji" style="width:98%;height: 240px"></div>
+            </fieldset>
+            <fieldset style="width: 22%;height: 240px;">
+                <legend style="color: #008194">面积趋势图图示</legend>
+                <div id="hengxiang" style="width:98%;height: 240px"></div>
+            </fieldset>
+            <fieldset style="width: 22%;height: 240px">
+                <legend>
+                    面积趋势图图示</legend>
+                <div id="duidie" style="width: 98%;height: 240px">
+                    <img src="img/duidie.gif"/>
+                </div>
+            </fieldset>
+            <fieldset style="width:22%;height: 240px">
+                <legend>
+                    面积趋势图图示</legend>
+                    <div id="zhuxian" style="width:98%;height:240px"></div>
+            </fieldset>
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="js/data.js"></script>
+<script type="text/javascript" src="js/highcharts.js"></script>
+<script type="text/javascript" src="js/echarts.min.js"></script>
+<script type="text/javascript" src="js/china.js"></script>
+<script>
+    cityMap();
+    // cityTable();
+    sysBing();
+    sysYibiao();
+    leiDa();
+
+    mianji();
+    hengxiang();
+    zhuXian();
+
+</script>
