@@ -1,0 +1,87 @@
+.content-header{background: #f9f9f9;width: 96%}
+.con-t .r{
+    width:160px;
+    height: 38px;
+
+
+    margin: 26px 0;
+    line-height: 38px;
+    text-align: center;
+    color: #fff;
+    margin-right: 2%;}
+.bt-td{
+        width: 100%;
+        height: 206px;
+    margin-bottom: 76px;
+    }
+.tw-dw{width: 100%;
+    height: 206px;
+    margin-bottom: 16px;}
+/*.bt-td-ul{height: 100%;}*/
+.bt-up{
+    height:80px;line-height:80px;padding-left:3%;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 14px;}
+.bt-td-li{
+    width: 48%;
+    box-shadow: 2px 2px 2px 0px #f1f1f3;
+    height: 250px;
+    background: #ff0}
+.jt-jd{width: 100%;
+    height: 206px;
+    margin-bottom: 76px;}
+.
+.li-up{font-size: 14px;height: 100px;
+        }
+.li-content{width: 90%;
+    height: 152px;margin: 16px 0;}
+.tc{display: flex;border-bottom: 1px solid #eeeeee;
+    height: 36px;
+    line-height: 36px;
+    margin-bottom: 16px}
+.tc li{
+    position: relative;
+    width: 15%;
+    text-align: center;
+    height: 36px;
+    line-height: 36px;
+    background: #ffc;
+    color:#5d5386;
+}
+.tc li div{
+            width: 100%;
+            height: 3px;
+            background:#fff;
+            position: absolute;
+            bottom:-10px;
+            left:0;
+            display: none;
+       }
+
+    .tc li:nth-child(1){
+    border-bottom: 2px solid #5d5386}
+   .li-content p{line-height: 20px;color:#98a8b4}
+    .bt-td-ul{display: flex;justify-content: space-around}
+    @media screen and (max-width:96px){
+        .bt-td{
+            width: 100%;
+            height: 206px;
+            margin-bottom: 76px;
+        }
+        .tw-dw{width: 100%;
+            height: 206px;
+            margin-bottom: 16px;}
+        /*.bt-td-ul{height: 100%;}*/
+        .bt-up{
+            height:80px;line-height:80px;padding-left:3%;
+            border-bottom: 1px solid #eeeeee;
+            font-size: 14px;}
+        .bt-td-li{
+            width: 48%;
+            box-shadow: 2px 2px 2px 0px #f1f1f3;
+            height: 250px;
+            background: #ff0}
+        .jt-jd{width: 100%;
+            height: 206px;
+            margin-bottom: 76px;}
+    }

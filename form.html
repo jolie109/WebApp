@@ -15,10 +15,77 @@
     <style>
         @import url(css/index.css) screen and (min-width:960px);
         @import url(css/index1.css) screen and (max-width:960px);
-        li:nth-child(1) a:hover{background: #f0ad4e;color: #fff}
-        li:nth-child(2) a:hover{background: #fe195e;color: #fff}
-        .ba-ul li{height: 47px;line-height:47px;border-radius:5px;
-            margin-bottom: 14px;padding-left:3%}
+        .it{height: 38px;line-height: 38px;
+        ;width: 98%;margin: 0 auto;margin-top: 20px}
+        .con-con input{outline: none}
+        .it input{width: 80%;height: 38px;border-radius: 5px}
+        .ic{
+            width: 98%;
+             height: 150px;
+             line-height: 150px;
+
+            margin:  0 auto;
+            margin-top: 20px
+        }
+
+        .ic ul{width: 50%;;margin:0 13%}
+        .ic ul li{line-height: 30px}
+        .ir{
+            width: 98%;
+            height: 150px;margin: 0 auto;
+            line-height: 150px;
+
+            margin-top: 20px
+        }
+
+        .ir ul{width: 50%;margin:0 16%}
+        .ir ul li{line-height: 30px}
+        .cs1{
+            width: 98%;
+            height: 200px;margin: 0 auto;
+            line-height: 200px;
+
+            margin-top: 20px
+        }
+        .cs1 input{width: 80%;height: 38px;border-radius: 5px;margin:10px 0}
+
+        /*.cs1 ul{width: 50%;background:#f0f;margin:0 16%}*/
+        .cs1 input{line-height: 30px}
+        .cs2{
+            width: 98%;
+            height: 200px;margin: 0 auto;
+            line-height: 200px;
+
+            margin-top: 20px}
+        .cs2 input{width:20%;height: 38px;
+            border-radius: 5px;margin:80px 0;
+        margin-right:6%}
+        .im{
+            position: relative;
+            width: 98%;
+            height: 200px;margin: 0 auto;
+            line-height: 200px;
+
+            margin-top: 20px}
+        .im input:nth-child(1){margin-top: 50px}
+        .im input{width: 80%;height: 44px;outline: none;
+        margin: 5px 0;border:none;border-bottom: 1px solid #252946}
+        
+        .im p{
+            position: absolute;
+            height: 14px;}
+        .p1{top:-24px;
+           left:20%;}
+        .p2{top:34px;
+            left:20%;}
+        .im .s1,.im .s2{
+
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background:#252946;right: 0}
+        .s1{top:94px}
+        .s2{top:148px}
     </style>
 
 
@@ -26,7 +93,7 @@
 <body>
 <div class="all">
     <!--固定导航栏 -->
-    <div class="search-box">
+    <div class="search-box"57>
         <input type="search" placeholder="Search something ...">
         <i class="iconfont icon-cuohao"></i>
     </div>
@@ -320,216 +387,144 @@
             </ul>
         </div>
         <!--右边的内容-->
-
-        <div class="content" style="background:#f9f9f9" >
-            <div class="content-header">
+        <div class="content" >
+            <div class="content-header" style="background: #f9f9f9;width:100%" >
                 <!--右边顶部-->
                 <div class="con-t">
-                    <p class="l" style="padding-left:1%">Alerts</p>
+                    <p class="l" style="padding-left:2%;font-size:20px">Forms Basic
+
+                    </p>
                     <p class="r" style="width: 20%;background:#f9f9f9;
-                    border-radius:0 ;font-size: 16px">
+                    border-radius:0 ">
                         <i class="iconfont icon-test">-</i>
                         <a><span style="color:#5e5587 ">Components-</span></a>
                         <a><span style="color: #94a4b0">Alerts</span></a>
+
                     </p>
                 </div>
+                <div class="con-con" style="width:98%;background: #fff;margin: 0 auto;">
+                    <p style="width: 98%;padding-left:2%;border-bottom:1px solid #eeeeee;height: 80px;line-height: 80px">All Elements</p>
+
+                    <div class="it">
+                        <span class="l">Normal</span>
+                        <input class="r" type="text" />
+                    </div>
+
+                    <div class="it" style=";position: relative">
+                        <span class="l">Help Text</span>
+                        <input class="r" type="text" />
+                        <p style="position: absolute;top: 38px;left:20%;"> Input with help text.</p>
+                    </div>
+
+                    <div class="it" style="margin-top: 30px">
+                        <span class="l">Placeholder</span>
+                        <input class="r" type="text" placeholder="placeholder" style="padding-left: 10px" />
+                    </div>
+
+                    <div class="it">
+                        <span class="l">Disabled</span>
+                        <input class="r" type="text"  type="text"
+                               placeholder="Disabled input here..."
+                               disabled style="padding-left: 10px;border: none"/>
+                    </div>
+
+                    <div class="ic">
+                        <span class="l">Checkboxes</span>
+                        <ul class="l">
+                            <li><input type="checkbox" />Default</li>
+
+                            <li><input type="checkbox" checked />Checked</li>
+                            <li><input type="checkbox" disabled />Disabled</li>
+                            <li><input type="checkbox" checked disabled/>Checked and Disabled</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="ir">
+                        <span class="l">Radios</span>
+                        <ul class="l">
+                            <li><input type="radio" />Default</li>
+
+                            <li><input type="radio" checked />Checked</li>
+                            <li><input type="radio" disabled />Disabled</li>
+                            <li><input type="radio" checked disabled/>Checked and Disabled</li>
+                        </ul>
+
+                    </div>
+                    <div class="it">
+                        <span class="l" style="color: #28a745;">Input Success</span>
+                        <input class="r" type="text"  style="padding-left: 12px;
+                        border-color: #28a745;"
+                               placeholder="Input Success" />
+                    </div>
+
+                    <div class="it">
+                        <span class="l" style="color: #fe195e;">Input Danger
+</span>
+                        <input class="r" type="text"  style="padding-left: 12px;
+                        border-color: #fe195e;"
+                               placeholder="" />
+                    </div>
+
+                    <div class="it">
+                        <span class="l" style="color: #ffc30f;">Input Warning
+                        </span>
+                        <input class="r" type="text"  style="padding-left: 12px;
+                        border-color: #ffc30f;"
+                               placeholder="" />
+                    </div>
+
+                    <div class="it">
+                        <span class="l" style="color: #31b0d5;">Input Info
+                        </span>
+                        <input class="r" type="text"  style="padding-left: 12px;
+                        border-color: #31b0d5;"
+                               placeholder="" />
+                    </div>
+
+                    <div class="cs1">
+                        <span class="l" style="">Control Sizing
+                        </span>
+                        <input class="r" type="text"  style="padding-left: 12px;"
+                               placeholder=".input-ig" />
+                        <input class="r" type="text"  style="padding-left: 12px; "
+                               placeholder="Default input" />
+                        <input class="r" type="text"  style="padding-left: 12px; "
+                               placeholder=".input-sm" />
+                    </div>
 
 
-                <div class="ba-as" style="width:100%;display: flex;
-                justify-content: space-around;">
-                     <!-- 右边第一部分 Basic Alerts-->
+                    <div class="cs2">
+                        <span class="l" style="">Column Sizing
+                        </span>
+                        <input class="r" type="text"  style="padding-left: 12px;"
+                               placeholder=".col-md-4" />
+                        <input class="r" type="text"  style="padding-left: 12px; "
+                               placeholder=".col-md-4" />
+                        <input class="r" type="text"  style="padding-left: 12px; "
+                               placeholder=".col-md-4" />
+                    </div>
 
-                    <div class="basic-alerts"
-                         style="margin-bottom:28px;height:1500px;
-                         box-shadow:2px 3px 2px 3px #f3f3f5;width: 45%;background: #fff">
-                    <p style="width: 95%;height: 60px;
-                            line-height: 60px;font-size: 16px;
-                            border-bottom: 1px solid #eeeeee;padding-left: 5%">
-                        Basic Buttons
-                    </p>
-                    <ul class="ba-ul" style="width:95%;
-                    margin:0 auto;margin-top: 20px;">
-                         <li style="background:#5d5386;color:#7d8195">
-                             Hey! This is a primary alert
-                         </li>
-                         <li style="background:#e4e8f0;color:#7d8195">
-                             Hey! This is a primary alert
-                         </li>
-                         <li style="background:#5cb85c;color:#7d8195">
-                             Hey! This is a primary alert
-                         </li>
-                         <li style="background:#f0ad4e;color:#7d8195">
-                             Hey! This is a primary alert
-                         </li>
-                         <li style="background:#c9302c;color:#7d8195">
-                             Hey! This is a primary alert
-                         </li>
+                    <div class="im">
+                        <span class="l">Material Inputs</span>
+                            <div class="ep">
+                            <input class="r input1" type="text"  style="padding-left: 12px;
+                                "
+                               placeholder="" />
+                                <p class="p1">Email</p>
+                                <span class="s1"></span>
+                            <input class="r input2" type="text"  style="padding-left: 12px;
+                               "
+                                   placeholder="" />
+                                <p class="p2">Password</p>
+                            <span class="s2"></span>
+                        </div>
+                    </div>
 
-                         <li style="height: 50px;line-height: 50px;
-                         color:#2c304d;font-size: 16px">
-                            <h3>Dissmissible Alerts</h3>
-                         </li>
-                        <li style="background:#5d5386;color:#7d8195;color:#fff">
-                            <span class="l">Hey! This is a primary alert</span>
-                            <span class="r" style="margin-right: 2%" >
-                                <i class="iconfont icon-cuohao" style="color:#fff;
-                                "></i>
-                            </span>
-                        </li>
-                        <li style="background:#e4e8f0;color:#2c304d">
-                            <span class="l">Hey! This is a primary alert</span>
-                            <span class="r" style="margin-right: 2%" >
-                                <i class="iconfont icon-cuohao" style="color:#2c304d;
-                                "></i>
-                            </span>
-                        </li>
-                        <li style="background:#5cb85c;color:#fff">
-                            <span class="l">Hey! This is a primary alert</span>
-                            <span class="r" style="margin-right: 2%" >
-                                <i class="iconfont icon-cuohao" style="color:#fff;
-                                "></i>
-                            </span>
-                        </li>
-                        <li style="background:#f0ad4e;color:#fff">
-                            <span class="l">Hey! This is a primary alert</span>
-                            <span class="r" style="margin-right: 2%" >
-                                <i class="iconfont icon-cuohao" style="color:#fff;
-                                "></i>
-                            </span>
-                        </li>
-                        <li style="background:#c9302c;color:#fff">
-                            <span class="l">Hey! This is a primary alert</span>
-                            <span class="r" style="margin-right: 2%" >
-                                <i class="iconfont icon-cuohao" style="color:#fff;
-                                "></i>
-                            </span>
-                        </li>
-                        <li style="height: 50px;line-height: 50px;
-                         color:#2c304d;font-size: 16px">
-                            <h3>Alerts Size</h3>
-                        </li>
-                        <li style="background:#5d5386;color:#7d8195;color:#fff;
-                        height: 50px;margin-bottom:0">
-                            <span class="l">Hey! This is a primary alert</span>
-                            <span class="r" style="margin-right: 2%" >
-                                <i class="iconfont icon-cuohao" style="color:#fff;
-                                "></i>
-                            </span>
-                        </li>
-                        <li>
-                            <p>
-                                <span style="font-size:14px;color:#9babb6; ">Use </span>
-                                <span style="font-size: 10px;color:#f49fc6;">.alert-lg</span>
-                                <span style="font-size:12px;color:#9babb6;">class.</span>
-                            </p>
-                        </li>
-                  </ul>
+
                 </div>
-                    <!-- 右边第二部分 Alerts Styles-->
 
-                    <div class="Alerts Styles"
-                         style="margin-bottom:28px;height:1500px;
-                         box-shadow:2px 3px 2px 3px #f3f3f5;width: 45%;background: #fff">
-                    <p style="width: 95%;height: 60px;
-                            line-height: 60px;font-size:16px;
-                            border-bottom: 1px solid #eeeeee;padding-left: 5%">
-                        Alerts Styles
-                    </p>
-                    <ul class="ba-ul" style="width:95%;
-
-                   margin:0 auto;margin-top: 20px">
-                        <li style="color:#2c304d">
-                            <h3 style="height: 30px;margin-bottom: 10px">Outline Style</h3>
-                        </li>
-                        <li style="border: 1px solid #5d5386;color:#7d8195">
-                            Hey! This is a primary alert
-                        </li>
-                        <li style="border: 1px solid #e4e8f0;color:#7d8195">
-                            Hey! This is a primary alert
-                        </li>
-                        <li style="border: 1px solid #5cb85c;color:#5cb85c">
-                            Hey! This is a primary alert
-                        </li>
-                        <li style="height: 55px;line-height: 55px;
-                         color:#2c304d;font-size: 16px">
-                            <h3>Border Style</h3>
-                        </li>
-                        <li style="border: 1px dashed #66c4e0;color:#66c4e0;
-                        margin-bottom: 0">
-                            <span class="l">Hey! This is a primary alert</span>
-                            <span class="r" style="margin-right: 2%" >
-                                <i class="iconfont icon-cuohao" style="color:#fff;
-                                "></i>
-                            </span>
-                        </li>
-                        <li style="margin: 0">
-                            <p>
-                                <span style="font-size:14px;color:#9babb6; ">Use </span>
-                                <span style="font-size: 10px;color:#f49fc6;">.alert-lg</span>
-                                <span style="font-size:12px;color:#9babb6;">class.</span>
-                            </p>
-                        </li>
-                        <li style="border: 1px dashed #cc3c38;color:#cc3c38;
-                        margin-bottom: 0">>
-                            <span class="l">Hey! This is a primary alert</span>
-                            <span class="r" style="margin-right: 2%" >
-                                <i class="iconfont icon-cuohao" style="color:#fff;
-                                "></i>
-                            </span>
-                        </li>
-                        <li>
-                            <p>
-                                <span style="font-size:14px;color:#9babb6; ">Use </span>
-                                <span style="font-size: 10px;color:#f49fc6;">.alert-lg</span>
-                                <span style="font-size:12px;color:#9babb6;">class.</span>
-                            </p>
-                        </li>
-                        <li style="height: 60px;line-height: 60px;
-                         color:#2c304d;font-size: 16px">
-                            <h3>Gradient Style</h3>
-                        </li>
-                        <li style="background: linear-gradient(135deg,#6859ea 0%,#6acbe0 80%
-                        );color:#fff">
-                            Hey! This is a primary alert
-                        </li>
-
-                        <li style="border:1px solid #e4e8f0;margin-bottom:0;color: #cad5f6">
-                            Hey! This is a primary alert
-                        </li>
-                        <li>
-                            <p>
-                                <span style="font-size:14px;color:#9babb6; ">Use </span>
-                                <span style="font-size: 10px;color:#f49fc6;">.alert-lg</span>
-                                <span style="font-size:12px;color:#9babb6;">class.</span>
-                                <span style="font-size:12px;color:#9babb6;">and</span>
-                                <span style="font-size: 10px;color:#f49fc6;">.alert-lg</span>
-                                <span style="font-size:12px;color:#9babb6;">class.</span>
-                            </p>
-                        </li>
-                        <li style="height: 60px;line-height: 60px;
-                         color:#2c304d;font-size: 16px">
-                            <h3>Square Style</h3>
-                        </li>
-                        <li style="background:#5d5386;color:#7d8195">
-                            Hey! This is a primary alert
-                        </li>
-                        <li style="background:#e4e8f0;margin-bottom:0;color:#7d8195">
-                            Hey! This is a primary alert
-                        </li>
-                        <li>
-                            <p>
-                                <span style="font-size:14px;color:#9babb6; ">Use </span>
-                                <span style="font-size: 10px;color:#f49fc6;">.alert-lg</span>
-                                <span style="font-size:12px;color:#9babb6;">class.</span>
-                            </p>
-                        </li>
-
-
-                    </ul>
-                </div>
-                </div>
             </div>
-
             <div class="footer">
                 <input type="button" value="Support Cebter">
                 <div style="margin-right:1.5%" class="r">
@@ -538,7 +533,7 @@
                 </div>
 
             </div>
-      </div>
+        </div>
     </section>
 </div>
 </body>
@@ -579,6 +574,7 @@
 
             });
         });
+
         $(".menu-li h3").click(function () {
             $(this).find(".i1").css({
                 color:"#e75966"
@@ -590,6 +586,7 @@
             // });
             // $(".sub").css({display:"block"})
         });
+
         $(".menui").click(function() {
             $(".side-box").css({left:"0"});
             $(".content-header").css({width:"90%",marginLeft:"15%"});
@@ -607,7 +604,20 @@
 
 
         });
+        $(".con-con input").each(function(){
+            $(this).click(function () {
+                $(this).css({borderColor:"#5d5386"});
 
+            });
+        })
+        $(".input1").click(function () {
+          $(".p1").css({top:"-46px",transition:"all 0.2s"});
+          $(".s1").css({width:"81%",transition:"all 2s"});
+        });
+        $(".input2").click(function () {
+            $(".p2").css({top:"0px",transition:"all 0.2s"});
+            $(".s2").css({width:"81%",transition:"all 2s"});
+        });
     });
 </script>
 <!--<script>-->
@@ -618,55 +628,3 @@
 <!--}-->
 <!--</script>-->
 <!---->
-<script>
-    var chart = Highcharts.chart('container',{
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: '月平均降雨量'
-        },
-        subtitle: {
-            text: '数据来源: WorldClimate.com'
-        },
-        xAxis: {
-            categories: [
-                '一月','二月','三月','四月','五月','六月','七月','八月','九月','十月','十一月','十二月'
-            ],
-            crosshair: true
-        },
-        yAxis: {
-            min: 0,
-            title: {
-                text: '降雨量 (mm)'
-            }
-        },
-        tooltip: {
-            // head + 每个 point + footer 拼接成完整的 table
-            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
-            footerFormat: '</table>',
-            shared: true,
-            useHTML: true
-        },
-        plotOptions: {
-            column: {
-                borderWidth: 0
-            }
-        },
-        series: [{
-            name: '东京',
-            data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
-        }, {
-            name: '纽约',
-            data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
-        }, {
-            name: '伦敦',
-            data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
-        }, {
-            name: '柏林',
-            data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
-        }]
-    });
-</script>

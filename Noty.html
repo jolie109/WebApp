@@ -15,10 +15,32 @@
     <style>
         @import url(css/index.css) screen and (min-width:960px);
         @import url(css/index1.css) screen and (max-width:960px);
-        li:nth-child(1) a:hover{background: #f0ad4e;color: #fff}
-        li:nth-child(2) a:hover{background: #fe195e;color: #fff}
-        .ba-ul li{height: 47px;line-height:47px;border-radius:5px;
-            margin-bottom: 14px;padding-left:3%}
+
+
+        .ld p span{
+            display:inline-block;
+            width:20%; height: 40px;
+            line-height: 40px;
+            border-radius: 15px;
+            font-weight: bold;
+            margin-right:3%;
+            text-align: center;
+            color:#fff;
+            box-shadow:0 1px 15px 1px rgba(52,40,104,.08);}
+        .lf p span{color:#ea5499;}
+        .lf h5{height: 40px}
+        .ld p{display: flex;height:74px;line-height: 74px}
+        .ls p span{
+            display: block;
+           height: 40px;
+            line-height: 40px;
+            border-radius:20px;
+            font-weight: bold;
+            color: #fff;
+            margin: 14px 0;
+            text-align: center;
+            }
+
     </style>
 
 
@@ -325,208 +347,127 @@
             <div class="content-header">
                 <!--右边顶部-->
                 <div class="con-t">
-                    <p class="l" style="padding-left:1%">Alerts</p>
+                    <p class="l" style="padding-left:1%">Notifications
+                    </p>
                     <p class="r" style="width: 20%;background:#f9f9f9;
                     border-radius:0 ;font-size: 16px">
                         <i class="iconfont icon-test">-</i>
-                        <a><span style="color:#5e5587 ">Components-</span></a>
-                        <a><span style="color: #94a4b0">Alerts</span></a>
+                        <a><span style="color:#5e5587 ">Notifications</span></a>
                     </p>
                 </div>
 
 
-                <div class="ba-as" style="width:100%;display: flex;
+                <div class="lw" style="width:100%;display: flex;
                 justify-content: space-around;">
-                     <!-- 右边第一部分 Basic Alerts-->
+                    <!-- 右边第一部分-->
 
-                    <div class="basic-alerts"
-                         style="margin-bottom:28px;height:1500px;
-                         box-shadow:2px 3px 2px 3px #f3f3f5;width: 45%;background: #fff">
-                    <p style="width: 95%;height: 60px;
-                            line-height: 60px;font-size: 16px;
-                            border-bottom: 1px solid #eeeeee;padding-left: 5%">
-                        Basic Buttons
-                    </p>
-                    <ul class="ba-ul" style="width:95%;
+                    <div class="lay"style="margin-bottom:28px;
+                    height: 600px;
+                         box-shadow:2px 3px 2px 3px #f3f3f5;
+                         width: 50%;background: #fff">
+                        <ul class="ba-ul" style="width:90%;
                     margin:0 auto;margin-top: 20px;">
-                         <li style="background:#5d5386;color:#7d8195">
-                             Hey! This is a primary alert
-                         </li>
-                         <li style="background:#e4e8f0;color:#7d8195">
-                             Hey! This is a primary alert
-                         </li>
-                         <li style="background:#5cb85c;color:#7d8195">
-                             Hey! This is a primary alert
-                         </li>
-                         <li style="background:#f0ad4e;color:#7d8195">
-                             Hey! This is a primary alert
-                         </li>
-                         <li style="background:#c9302c;color:#7d8195">
-                             Hey! This is a primary alert
-                         </li>
+                            <li class="lf" style="height: 94px;margin-top:26px;">
+                                <h5 style="font-size: 14px">Layouts:</h5>
+                                <p>
+                                    <span>notification</span>,
+                                    <span>alert </span>,
+                                    <span>success </span>,
+                                    <span>warning </span>,
+                                    <span>error </span>,
+                                    <span>info/informationss</span>
+                                </p>
+                            </li>
+                            <li class="lf" style="height: 100px">
+                                <h5>Types:</h5>
+                                <p>
+                                    <span>top </span>,
+                                    <span>topLeft</span>,
+                                    <span>topCenter</span>,
+                                    <span>topRight</span>,
+                                    <span>center</span>,
+                                    <span>centerLeft</span>,
+                                    <span>centerRight</span>,
+                                    <span>bottom</span>,
+                                    <span>bottomLeft</span>,
+                                    <span>bottomCenter</span>,
+                                    <span>bottomRight</span>,
+                                </p>
+                            </li>
 
-                         <li style="height: 50px;line-height: 50px;
-                         color:#2c304d;font-size: 16px">
-                            <h3>Dissmissible Alerts</h3>
-                         </li>
-                        <li style="background:#5d5386;color:#7d8195;color:#fff">
-                            <span class="l">Hey! This is a primary alert</span>
-                            <span class="r" style="margin-right: 2%" >
-                                <i class="iconfont icon-cuohao" style="color:#fff;
-                                "></i>
-                            </span>
-                        </li>
-                        <li style="background:#e4e8f0;color:#2c304d">
-                            <span class="l">Hey! This is a primary alert</span>
-                            <span class="r" style="margin-right: 2%" >
-                                <i class="iconfont icon-cuohao" style="color:#2c304d;
-                                "></i>
-                            </span>
-                        </li>
-                        <li style="background:#5cb85c;color:#fff">
-                            <span class="l">Hey! This is a primary alert</span>
-                            <span class="r" style="margin-right: 2%" >
-                                <i class="iconfont icon-cuohao" style="color:#fff;
-                                "></i>
-                            </span>
-                        </li>
-                        <li style="background:#f0ad4e;color:#fff">
-                            <span class="l">Hey! This is a primary alert</span>
-                            <span class="r" style="margin-right: 2%" >
-                                <i class="iconfont icon-cuohao" style="color:#fff;
-                                "></i>
-                            </span>
-                        </li>
-                        <li style="background:#c9302c;color:#fff">
-                            <span class="l">Hey! This is a primary alert</span>
-                            <span class="r" style="margin-right: 2%" >
-                                <i class="iconfont icon-cuohao" style="color:#fff;
-                                "></i>
-                            </span>
-                        </li>
-                        <li style="height: 50px;line-height: 50px;
-                         color:#2c304d;font-size: 16px">
-                            <h3>Alerts Size</h3>
-                        </li>
-                        <li style="background:#5d5386;color:#7d8195;color:#fff;
-                        height: 50px;margin-bottom:0">
-                            <span class="l">Hey! This is a primary alert</span>
-                            <span class="r" style="margin-right: 2%" >
-                                <i class="iconfont icon-cuohao" style="color:#fff;
-                                "></i>
-                            </span>
-                        </li>
-                        <li>
-                            <p>
-                                <span style="font-size:14px;color:#9babb6; ">Use </span>
-                                <span style="font-size: 10px;color:#f49fc6;">.alert-lg</span>
-                                <span style="font-size:12px;color:#9babb6;">class.</span>
-                            </p>
-                        </li>
-                  </ul>
-                </div>
-                    <!-- 右边第二部分 Alerts Styles-->
 
-                    <div class="Alerts Styles"
-                         style="margin-bottom:28px;height:1500px;
-                         box-shadow:2px 3px 2px 3px #f3f3f5;width: 45%;background: #fff">
-                    <p style="width: 95%;height: 60px;
-                            line-height: 60px;font-size:16px;
-                            border-bottom: 1px solid #eeeeee;padding-left: 5%">
-                        Alerts Styles
-                    </p>
-                    <ul class="ba-ul" style="width:95%;
+                            <li class="ld" style="height:74px;line-height: 74px;margin-bottom:30px">
+                                <h5>Direction(Top):</h5>
+                                <p>
+                                    <span class="topSpan"style="width: 15%"><a>Top</a></span>
+                                    <span class="topLeftSpan"><a>Top Left</a></span>
+                                    <span class="topCenterSpan"><a>Top Center</a></span>
+                                    <span class="topRightSpan"><a>Top Right</a></span>
+                            </li>
+                            <li class="ld" style="height:74px;line-height: 74px;margin-bottom: 30px">
+                                <h5>Direction(Center):</h5>
+                                <p>
+                                    <span class="centerSpan"><a>Center</a></span>
+                                    <span class="centerLeftSpan"><a>Center Left</a></span>
+                                    <span class="centerRightSpan"><a>Center Right</a></span>
+                                </p>
+                            </li>
+                            <li class="ld" style="height:74px;line-height: 74px;margin-bottom:30px">
+                                <h5>Direction(Bottom):</h5>
+                                <p>
+                                    <span class="bottomSpan"><a>Bottom</a></span>
+                                    <span class="bottomLeftSpan"><a>Bottom Left</a></span>
+                                    <span class="bottomCenterSpan"><a>Bottom Center</a></span>
+                                    <span class="bottomRightSpan"><a>Bottom Right</a></span>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- 右边第二部分-->
+
+                    <div class="wl"
+                         style="margin-bottom:28px;height:600px;
+                         box-shadow:2px 3px 2px 3px #f3f3f5;width: 45%;
+                         background: #fff">
+
+                        <ul class="wl-ul" style="width:95%;
 
                    margin:0 auto;margin-top: 20px">
-                        <li style="color:#2c304d">
-                            <h3 style="height: 30px;margin-bottom: 10px">Outline Style</h3>
-                        </li>
-                        <li style="border: 1px solid #5d5386;color:#7d8195">
-                            Hey! This is a primary alert
-                        </li>
-                        <li style="border: 1px solid #e4e8f0;color:#7d8195">
-                            Hey! This is a primary alert
-                        </li>
-                        <li style="border: 1px solid #5cb85c;color:#5cb85c">
-                            Hey! This is a primary alert
-                        </li>
-                        <li style="height: 55px;line-height: 55px;
-                         color:#2c304d;font-size: 16px">
-                            <h3>Border Style</h3>
-                        </li>
-                        <li style="border: 1px dashed #66c4e0;color:#66c4e0;
-                        margin-bottom: 0">
-                            <span class="l">Hey! This is a primary alert</span>
-                            <span class="r" style="margin-right: 2%" >
-                                <i class="iconfont icon-cuohao" style="color:#fff;
-                                "></i>
-                            </span>
-                        </li>
-                        <li style="margin: 0">
-                            <p>
-                                <span style="font-size:14px;color:#9babb6; ">Use </span>
-                                <span style="font-size: 10px;color:#f49fc6;">.alert-lg</span>
-                                <span style="font-size:12px;color:#9babb6;">class.</span>
-                            </p>
-                        </li>
-                        <li style="border: 1px dashed #cc3c38;color:#cc3c38;
-                        margin-bottom: 0">>
-                            <span class="l">Hey! This is a primary alert</span>
-                            <span class="r" style="margin-right: 2%" >
-                                <i class="iconfont icon-cuohao" style="color:#fff;
-                                "></i>
-                            </span>
-                        </li>
-                        <li>
-                            <p>
-                                <span style="font-size:14px;color:#9babb6; ">Use </span>
-                                <span style="font-size: 10px;color:#f49fc6;">.alert-lg</span>
-                                <span style="font-size:12px;color:#9babb6;">class.</span>
-                            </p>
-                        </li>
-                        <li style="height: 60px;line-height: 60px;
-                         color:#2c304d;font-size: 16px">
-                            <h3>Gradient Style</h3>
-                        </li>
-                        <li style="background: linear-gradient(135deg,#6859ea 0%,#6acbe0 80%
-                        );color:#fff">
-                            Hey! This is a primary alert
-                        </li>
 
-                        <li style="border:1px solid #e4e8f0;margin-bottom:0;color: #cad5f6">
-                            Hey! This is a primary alert
-                        </li>
-                        <li>
-                            <p>
-                                <span style="font-size:14px;color:#9babb6; ">Use </span>
-                                <span style="font-size: 10px;color:#f49fc6;">.alert-lg</span>
-                                <span style="font-size:12px;color:#9babb6;">class.</span>
-                                <span style="font-size:12px;color:#9babb6;">and</span>
-                                <span style="font-size: 10px;color:#f49fc6;">.alert-lg</span>
-                                <span style="font-size:12px;color:#9babb6;">class.</span>
-                            </p>
-                        </li>
-                        <li style="height: 60px;line-height: 60px;
-                         color:#2c304d;font-size: 16px">
-                            <h3>Square Style</h3>
-                        </li>
-                        <li style="background:#5d5386;color:#7d8195">
-                            Hey! This is a primary alert
-                        </li>
-                        <li style="background:#e4e8f0;margin-bottom:0;color:#7d8195">
-                            Hey! This is a primary alert
-                        </li>
-                        <li>
-                            <p>
-                                <span style="font-size:14px;color:#9babb6; ">Use </span>
-                                <span style="font-size: 10px;color:#f49fc6;">.alert-lg</span>
-                                <span style="font-size:12px;color:#9babb6;">class.</span>
-                            </p>
-                        </li>
+                            <li class="ld" style="height: 74px;margin-bottom:50px">
+                                <h5 style="height: 20px;line-height: 20px;margin-bottom: 20px">With Dlay:</h5>
+                                <p style="line-height:50px">
+                                    <span><a>Top Left</a></span>
+                                    <span><a>center</a></span>
+                                    <span style="width: 30%"><a>Bottom Right</a></span>
+                                </p>
+                            </li>
+
+                            <li class="ls">
+                                <h5>Layouts:</h5>
+                                <p>
+
+                                    <span style="width: 20%;background: #5d5386;color:#fff"><a>Default</a></span>
+                                    <span style="width: 20%;background: #5cb85c;"><a>Success</a></span>
+                                    <span style="width: 20%;background: #f0ad4e;"><a>Warning</a></span>
+                                    <span style="width: 15%;background: #fe195e;"><a>Error</a></span>
+                                    <span style="width: 25%;background: #5bc0de;"><a>Informations</a>
+                                </span>
+
+                                </p>
+                            </li>
 
 
-                    </ul>
-                </div>
+                            <li style="height: 30px;line-height: 30px;color:#888b9b">
+                            Visit https://ned.im/noty/
+                            </li>
+                            <li style="height:30px;line-height: 30px;color:#888b9b">
+                                Visit https://daneden.github.io/animate.css/ for more transitions.
+                            </li>
+
+
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -538,8 +479,107 @@
                 </div>
 
             </div>
-      </div>
+        </div>
     </section>
+    <p class="top" style="width:70%;
+    height:50px;line-height: 50px;
+    background: #2c304d;opacity:.8;
+    font-weight:bold;color: #fff;position:fixed;
+    top:-50px;left:20%;z-index: 10000">
+        <span class="l" style="padding-left: 12px">Hey this is an example notification.</span>
+        <i class="iconfont icon-cuohao r it" style="margin-right: 2%"></i>
+
+    </p>
+    <p class="top-left" style="width:20%;
+    height:50px;line-height: 50px;
+    background: #2c304d;opacity:.8;
+    font-weight:bold;color: #fff;position:fixed;
+    top:34px;left:-21%;z-index: 10000">
+        <span class="l" style="padding-left: 12px">Hey this is an example notification.</span>
+        <i class="iconfont icon-cuohao r it" style="margin-right: 2%"></i>
+
+    </p>
+    <p class="top-center" style="width:20%;
+    height:50px;line-height: 50px;
+    background: #2c304d;opacity:.8;
+    font-weight:bold;color: #fff;position:fixed;
+    top:-70px;left:50%;z-index: 10000">
+        <span class="l" style="padding-left: 12px">Hey this is an example notification.</span>
+        <i class="iconfont icon-cuohao r it" style="margin-right: 2%"></i>
+
+    </p>
+    <p class="top-right" style="width:20%;
+    height:50px;line-height: 50px;
+    background: #2c304d;opacity:.8;
+    font-weight:bold;color: #fff;position:fixed;
+    top:70px;right:-22%;z-index: 10000">
+        <span class="l" style="padding-left: 12px">Hey this is an example notification.</span>
+        <i class="iconfont icon-cuohao r it" style="margin-right: 2%"></i>
+
+    </p>
+    <p class="center" style="width:20%;
+    height:50px;line-height: 50px;
+    background: #2c304d;opacity:.8;
+    font-weight:bold;color: #fff;position:fixed;
+    top:-50%;left:50%;z-index: 10000">
+        <span class="l" style="padding-left: 12px">Hey this is an example notification.</span>
+        <i class="iconfont icon-cuohao r it" style="margin-right: 2%"></i>
+
+    </p>
+    <p class="center-left" style="width:20%;
+    height:50px;line-height: 50px;
+    background: #2c304d;opacity:.9;
+    font-weight:bold;color: #fff;position:fixed;
+    top:49%;left:-22%;z-index: 10000">
+        <span class="l" style="padding-left: 12px">Hey this is an example notification.</span>
+        <i class="iconfont icon-cuohao r it" style="margin-right: 2%"></i>
+
+    </p>
+    <p class="center-right" style="width:20%;
+    height:50px;line-height: 50px;
+    background: #2c304d;opacity:.9;
+    font-weight:bold;color: #fff;position:fixed;
+    top:49%;right:-21%;z-index: 10000">
+        <span class="l" style="padding-left: 12px">Hey this is an example notification.</span>
+        <i class="iconfont icon-cuohao r it" style="margin-right: 2%"></i>
+
+    </p>
+    <p class="bottom" style="width:70%;
+    height:50px;line-height: 50px;
+    background: #2c304d;opacity:.8;
+    font-weight:bold;color: #fff;position:fixed;
+    bottom:-50px;left:20%;z-index: 10000">
+        <span class="l" style="padding-left: 12px">Hey this is an example notification.</span>
+        <i class="iconfont icon-cuohao r ib" style="margin-right: 2%"></i>
+
+    </p>
+    <p class="bottom-left" style="width:20%;
+    height:50px;line-height: 50px;
+    background: #2c304d;opacity:.9;
+    font-weight:bold;color: #fff;position:fixed;
+    bottom:34px;left:-21%;z-index: 10000">
+        <span class="l" style="padding-left: 12px">Hey this is an example notification.</span>
+        <i class="iconfont icon-cuohao r it" style="margin-right: 2%"></i>
+
+    </p>
+    <p class="bottom-center" style="width:20%;
+    height:50px;line-height: 50px;
+    background: #2c304d;opacity:.8;
+    font-weight:bold;color: #fff;position:fixed;
+    bottom:70px;left:-50%;z-index: 10000">
+        <span class="l" style="padding-left: 12px">Hey this is an example notification.</span>
+        <i class="iconfont icon-cuohao r it" style="margin-right: 2%"></i>
+
+    </p>
+    <p class="bottom-right" style="width:20%;
+    height:50px;line-height: 50px;
+    background: #2c304d;opacity:.8;
+    font-weight:bold;color: #fff;position:fixed;
+    bottom:70px;right:-22%;z-index: 10000">
+        <span class="l" style="padding-left: 12px">Hey this is an example notification.</span>
+        <i class="iconfont icon-cuohao r it" style="margin-right: 2%"></i>
+
+    </p>
 </div>
 </body>
 </html>
@@ -548,6 +588,47 @@
 <script type="text/javascript" src="js/highcharts.js"></script>
 <script type="text/javascript" src="js/highcharts-zh_CN.js"></script>
 <script>
+    $(function(){
+    $(".topSpan").click(function(){
+        $(".top").css({top:"20px",transition:"all 0.5s"});
+    });
+    $(".topLeftSpan").click(function(){
+        $(".top-left").css({left:"1%",transition:"all 0.5s"});
+    });
+    $(".topCenterSpan").click(function(){
+        $(".top-center").css({top:"70px",transition:"all 0.5s"});
+    });
+    $(".topRightSpan").click(function(){
+            $(".top-right").css({right:"1%",transition:"all 0.5s"});
+        });
+    $(".centerSpan").click(function(){
+            $(".center").css({top:"50%",transition:"all 0.5s"});
+        });
+    $(".centerLeftSpan").click(function(){
+    $(".center-left").css({left:"2%",transition:"all 0.5s"});
+        });
+    $(".centerRightSpan").click(function(){
+    $(".center-right").css({right:"2%",transition:"all 0.5s"});
+        });
+    $(".bottomSpan").click(function(){
+        $(".bottom").css({bottom:"20px",transition:"all 0.5s"});
+
+    });
+        $(".bottomLeftSpan").click(function(){
+            $(".bottom-left").css({left:"1%",transition:"all 0.5s"});
+
+        });
+        $(".bottomRightSpan").click(function(){
+            $(".bottom-right").css({right:"2%",transition:"all 0.5s"});
+
+        });
+        $(".bottomCenterSpan").click(function(){
+            $(".bottom-center").css({left:"50%",transition:"all 0.5s"});
+
+        });
+
+
+});
     // doucument.querySelector(".sub-li").each(function() {
     //     this.style.color =
     //
@@ -598,7 +679,7 @@
 
         });
         $(".fc").click(function(){
-            $(".search-box").animate({top: '0'},1000);
+            $(".search-box").animate({top:'0'},1000);
 
 
         });

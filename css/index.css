@@ -84,7 +84,7 @@
 
 
     .side-box{
-
+        overflow-y: auto;
         color: #fff;
         width:20%;
         background: #2c304d;
@@ -96,19 +96,36 @@
         padding-top: 20px;
     }
 
-    side-box ul li{
+    .side-box ul li{
         font-size: 14px;
-    width: 15%}
-    .side-box ul li h3 i,.side-box ul li h3 sapn{display: inline-block}
-     .side-box ul li h3{
-         line-height: 50px;
-         position: relative;}
-     .side-box ul li  i:nth-child(1){margin:2px 14px;
+
+    }
+    .side-box ul li h3 i,.side-box ul li h3 span{
+          display: inline-block;
+      }
+    .side-box ul li h3{
+        line-height: 50px;
+        position: relative;
+    }
+    .side-box  li h4 i,.side-box ul li h4 span{
+        display: inline-block;
+    }
+    .side-box  li h4{
+        line-height: 50px;
+        position: relative;
+    }
+    .side-box ol li a{color:#656481;}
+    .side-box ol li a:hover{color: #e76c90;}
+     .side-box ul li  i:nth-child(1){
+         margin:2px 14px;
          font-size: 14px;
-         color: #fff;}
-    .side-box ul li:nth-child(1) i:nth-child(2){margin:2px 14px;
+         color: #fff;
+     }
+    .side-box ul li:nth-child(1) i:nth-child(2){
+        margin:2px 14px;
         font-size: 14px;
-        color: #e75966;}
+        color: #e75966;
+    }
     .li4 h3{color: #aea9c3; margin-left: 5%}
     .li10 h3{color: #aea9c3; margin-left: 5%}
     .side-box ul li i:nth-child(3){
